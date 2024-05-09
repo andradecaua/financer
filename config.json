@@ -1,3 +1,7 @@
 {
-    "Salario": 2000
+    "Salario": 2000,
+    "rendaExtra": [{
+        "Nome": "Nomos",
+        "Valor": 200
+    }]
 }

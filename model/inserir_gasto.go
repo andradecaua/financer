@@ -8,7 +8,6 @@ import (
 func InserirGastos(valor float64, arquivo, gasto, prioridade string) {
 
 	dadosNovos := []byte(fmt.Sprintf("\n%s;%f;%s", gasto, valor, prioridade))
-
 	file, err := os.OpenFile(fmt.Sprintf("meses/%s.csv", arquivo), os.O_RDWR, os.ModeDir)
 
 	if err != nil {
