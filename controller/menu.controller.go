@@ -76,7 +76,14 @@ func MenuController() {
 			}
 		case "5":
 			{
-				fmt.Println("SAINDO EM 3 SEGUNDOS ...")
+				go func() {
+					var count = 4
+					for count > 0 {
+						fmt.Printf("SAINDO EM %d ...\n", (count - 1))
+						count -= 1
+						time.Sleep(time.Second)
+					}
+				}()
 				time.Sleep(time.Second * 3)
 				os.Exit(0)
 			}
